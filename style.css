@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0d1117;
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    color: whitesmoke;
+    font-family: Roboto;
+    font-size: clamp(2rem, 8vw, 7rem);
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    user-select: none;
+}
+
+.card {
+    position: absolute;
+    width: 14vw;
+    height: 5.5vh;
+    min-width: 100px;
+    max-width: 200px;
+    min-height: 30px;
+    border: 1px solid whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    user-select: none;
+    font-weight: bold;
+    cursor: grab;
+    padding: 1.5rem;
+  border-radius: 50px;
+  color: whitesmoke;
+}
+
+.card.cursor {
+  cursor: grabbing;
+}
+
+button {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: transparent;
+    color: rgba(245, 245, 245, 0.678);
+    outline: none;
+    border: 2px solid rgba(245, 245, 245, 0.678);
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    font-size: 17px;
+}

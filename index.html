@@ -1,114 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"  crossorigin="anonymous" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title> 🦕🦕🦕 </title>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <style>
-		body{
-			font-family: 'Quicksand', sans-serif;
-        }
-        .full{
-            height: 100vh;
-            width: 100vw;
-            max-width: 100vw;
-            object-fit: cover;
-            object-position: center;
-        }
-        .full-black{
-            height: 100%;
-            width: 100vw;
-            background-color: #000;
-            opacity: 0.5;
-            position: absolute;
-        }
-        .full-orange{
-            height: 100%;
-            width: 100vw;
-            background-color: #ffd900;
-            opacity: 1;
-            position: absolute;
-        }
-        .bg-orange{
-            background-color: #ffd900;
-        }
-        .credits{
-            position: absolute;
-            bottom: 15px;
-            right: 15px;
-            z-index: 2;
-            text-align: right;
-        }
-        p{
-            font-size: 0.6rem;
-        }
-        p span{
-            font-weight: bolder;
-            font-size: 1rem;
-        }
-        .center-content{
-            position: absolute;
-            top: 20%;
-            left: 20%;
-            transform: translate(-50%);
-            z-index: 2;
-        }
-        .img-content{
-            position: absolute;
-            height: 400px;
-            bottom: 0;
-            left: 50%;
-        }
-        .container-orange{
-            height: 100vh;
-            width: 100vw;
-            overflow: hidden;
-        }
-        @media only screen
-        and (max-device-width: 414px){
-            .img-content{
-                height: 290px;
-                max-height: 100%;
-                transform: translate(-50%);
-                bottom: unset;
-                top: 50%;
-            }
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MMMBop</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .d-none{
+      display: none;
     }
-	</style>
+  </style>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12 p-0">
-                <div class="container-orange bg-orange">
-                    <div class="pt-lg-5 pt-3 mt-lg-5 mt-3 pl-lg-5 ml-lg-5 pt-3 ml-3">
-                        <h1>
-                           Inside those page you've handed down
-                        </h1>
-                        <h2>
-                            <i class="fa-thin fa-worm"></i>
-                            <i class="fa-duotone fa-solid fa-mosquito"></i>
-                            <i class="fa-duotone fa-regular fa-locust"></i>
-                            <i class="fa-sharp-duotone fa-thin fa-bugs"></i>
-                        </h2>
-                    </div>
-                    <p class="credits">
-                        <span>
-                            Alrights @hanandito on twitter
-                        </span><br>
-                            hananditos@gmail.com . 2021 
-                    </p>
-                    <img class="img-content d-none" src="PngItem_2484175.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- partial:index.partial.html -->
+<canvas class="webgl"></canvas>
+
+<div class="container">
+</div>
+<h1 class="d-none">Click to drag</h1>
+
+<button class="d-none">Refresh</button>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js'></script><script  src="./script.js"></script>
+
 </body>
 </html>
